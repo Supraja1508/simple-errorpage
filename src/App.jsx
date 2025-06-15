@@ -79,7 +79,7 @@ function App() {
     <div style={commonStyle}>
       <nav style={navStyle}>
         <div style={navGroupStyle}>
-          <Link to="/simple-errorpage/" style={linkStyle}>Home</Link>
+          <Link to="/home" style={linkStyle}>Home</Link>
           <Link to="/about" style={linkStyle}>About Us</Link>
           <Link to="/contact" style={linkStyle}>Contact Us</Link>
         </div>
@@ -89,7 +89,7 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/simple-errorpage/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<ErrorPage />} />
